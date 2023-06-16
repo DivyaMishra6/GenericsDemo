@@ -74,5 +74,40 @@ namespace GenericsDemo
 
         }
 
+        //String
+
+        public static String MaximumString(String name1, String name2, String name3)
+        {
+            if (name1.CompareTo(name2) > 0 && name1.CompareTo(name3) > 0 ||
+
+                name1.CompareTo(name2) >= 0 && name1.CompareTo(name3) > 0 ||
+
+                name1.CompareTo(name2) > 0 && name1.CompareTo(name3) >= 0)
+            {
+                return name1;
+            }
+            if (name2.CompareTo(name1) > 0 && name2.CompareTo(name3) > 0 ||
+
+                name2.CompareTo(name1) >= 0 && name2.CompareTo(name3) > 0 ||
+
+               name2.CompareTo(name1) > 0 && name2.CompareTo(name3) >= 0)
+            {
+                return name2;
+            }
+
+            if (name3.CompareTo(name1) > 0 && name3.CompareTo(name2) > 0 ||
+
+               name3.CompareTo(name1) >= 0 && name3.CompareTo(name2) > 0 ||
+
+                name3.CompareTo(name1) > 0 && name3.CompareTo(name2) >= 0)
+            {
+                return name3;
+            }
+
+            return default;
+
+
+        }
+
     }
 }
