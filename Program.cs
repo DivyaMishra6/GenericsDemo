@@ -10,6 +10,9 @@
             float result1 = FindMax.Maximumfloat(5.7f, 8.08f, 33.67f);
             Console.WriteLine("maximum float is: " + result1);
 
+            String result2 = FindMax.MaximumString("Divya", "Priya", "Aakhansha");
+            Console.WriteLine("maximum string is: " + result2);
+
 
         }
     }
